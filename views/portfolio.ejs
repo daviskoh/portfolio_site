@@ -1,0 +1,50 @@
+<% layout('layout') -%>
+
+<h2>Portfolio</h2>
+<div id="portfolioContent" style="display: block;">
+  <!-- INPUT'S -->
+  <input type="radio" id="firstslider" name="changeslider" checked>
+  <input type="radio" id="secondslider" name="changeslider">
+  <input type="radio" id="threeslider" name="changeslider">
+  <input type="radio" id="fourslider" name="changeslider">
+  <input type="radio" id="fiveslider" name="changeslider">
+  <input type="radio" id="sixslider" name="changeslider">
+
+  <input type="radio" id="one" name="updown" checked>
+  <input type="radio" id="two" name="updown">
+  <input type="radio" id="three" name="updown">
+
+  <input type="radio" name="next" id="slide1" checked>
+  <input type="radio" name="next" id="slide2">
+  <input type="radio" name="next" id="slide3">
+  <input type="radio" name="next" id="slide4">
+
+  <div class="wrapper">
+    <div class="cont">
+      <div class="lefts">
+        <label for="slide4" class="int manage_one left"><p></p></label>
+        <label for="slide1" class="int manage_two left"><p></p></label>
+        <label for="slide2" class="int manage_tre left"><p></p></label>
+        <label for="slide3" class="int manage_for left"><p></p></label>
+      </div>
+      <div class="image">
+        <a href="http://we-hungry.herokuapp.com/"><img src="http://s30.postimg.org/biiuo3s5d/wehungry.png" alt=""></a>
+        <a href="ga-radar.herokuapp.com"><img src="http://s30.postimg.org/ir8q1zpz5/garadar.png" alt=""></a>
+        <a href="https://rubygems.org/gems/backaid"><img src="http://s16.postimg.org/ni02fmomt/backaid.png" alt=""></a>
+        <a href="swaguru.herokuapp.com"><img src="http://s12.postimg.org/65v15l6j1/swaguru.png" alt=""></a>
+      </div>
+      <div class="but">
+        <label for="slide1" class="select_but select1" onclick=""><div></div></label>
+        <label for="slide2" class="select_but select2" onclick=""><div></div></label>
+        <label for="slide3" class="select_but select3" onclick=""><div></div></label>
+        <label for="slide4" class="select_but select4" onclick=""><div></div></label>
+      </div>
+      <div class="rights">
+        <label for="slide2" class="int manage_one right"><p></p></label>
+        <label for="slide3" class="int manage_two right"><p></p></label>
+        <label for="slide4" class="int manage_tre right"><p></p></label>
+        <label for="slide1" class="int manage_for right"><p></p></label>
+      </div>
+    </div>
+  </div>
+</div>

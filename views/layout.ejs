@@ -6,13 +6,35 @@
   <link rel='stylesheet' href='/stylesheets/style.css' />
 </head>
 <body>
+  <h1 class='title'><%= name %></h1>
 
+  <div class="nav">
+    <div class="container">
+      <a href='about'><div id="about" class="button1 line start">
+        About
+      </div></a>
+      <a href='portfolio'><div id="portfolio" class="button1 line mid">
+        Portfolio 
+      </div></a>
+      <!-- <a href='resume'><div id="resume" class="button1 line mid">
+        Resume
+      </div></a> -->
+      <a href='contact'><div id="contact" class="button1 line end">
+        Contact 
+      </div></a>
+    </div>
+  </div>
 
-  <%- body %>
+  <div id="content" class="content">
+    <%- body %>
+  </div>  
 
   <script type='text/javascript' scr='/javascripts/main.js'></script>
   <script type='text/javascript' scr='javascripts/main.js'></script>
   <script type='text/javascript' scr='/main.js'></script>
   <script type='text/javascript' scr='main.js'></script>
+  <script>
+    var ello = 'ello';
+  </script>
 </body>
 </html>

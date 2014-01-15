@@ -1,8 +1,16 @@
 
 /*
- * GET home page.
+ * GET about page.
  */
 
-exports.index = function(req, res){
-  res.render('index', { name: 'Davis Koh' });
+exports.about = function(req, res){
+  res.render('about', { name: 'Davis Koh' });
+};
+
+exports.portfolio = function(req, res){
+  res.render('portfolio', { name: 'Davis Koh' });
+};
+
+exports.contact = function(req, res){
+  res.render('contact', { name: 'Davis Koh' });
 };
