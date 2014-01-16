@@ -327,15 +327,16 @@ input{
 .cont, .cont1, .cont2, .cont3, .cont4, .cont5{
   display: none;
   float: left;
-  width: 80%;
+  width: 100%;
   height: 100%;
   overflow: hidden;
 }
 .image img{
-  width: 25%;
+  width: 20%;
   height: 100%;
   display: inline-block;
   float: left;
+  margin-right: 5%;
 }
 .image{
   width: 500%;
@@ -486,7 +487,7 @@ input{
 #slide1:checked ~ .wrapper .cont .but .select1 > div{display: block;}
 #slide1:checked ~ .wrapper .manage_one{display: inline-block;}
 
-#slide2:checked ~ .wrapper .cont .image{ margin-left:-130%;}
+#slide2:checked ~ .wrapper .cont .image{ margin-left:-125%;}
 #slide2:checked ~ .wrapper .manage_two{display: inline-block;}
 #slide2:checked ~ .wrapper .cont .but .select2 > div{display: block;}
 
@@ -494,7 +495,7 @@ input{
 #slide3:checked ~ .wrapper .manage_tre{display: inline-block;}
 #slide3:checked ~ .wrapper .cont .but .select3 > div{display: block;}
 
-#slide4:checked ~ .wrapper .cont .image{ margin-left:-380%;}
+#slide4:checked ~ .wrapper .cont .image{ margin-left:-375%;}
 #slide4:checked ~ .wrapper .manage_for{display: inline-block;}
 #slide4:checked ~ .wrapper .cont .but .select4 > div{display: block;}
 
