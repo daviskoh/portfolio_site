@@ -1,12 +1,7 @@
-$primary-color: #000;
-
-body {
-  background-color: $primary-color;
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-}
+$primary-color: lighten(#00628B, 10%);
 
 h1 {
+  font-family: Romeral;
   text-align: center;
 }
 
@@ -81,10 +76,6 @@ div.container {
 
 .space {
   margin: 15px 0;
-}
-
-form {
-
 }
 
 button {
@@ -227,10 +218,10 @@ div.button1 {
   top: 0px;
   width: 100%;
   text-align: center;
-  background: #00628B;
-  border: solid 1px #003e58;
-  border-bottom: solid 10px #003e58;
+  background: $primary-color;
   box-shadow: 0 2px 10px rgba(1, 1, 1, 0.25);
+  border: solid 1px #003e58;
+  border-bottom: solid 10px darken($primary-color, 10%);
   
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -626,7 +617,7 @@ h2 {
   height: 35px;
   width: 99.9%;
   line-height: 35px;
-  background-color: #006280;
+  background-color: $primary-color;
   color: white;
   border-bottom: 1px solid silver;
   border-radius: 6px 6px 0 0;
@@ -749,6 +740,7 @@ div.skills {
   /*padding-top: 0px;*/
 }
 img.icon, img.icon2 {
+  background-color: #E6E6DC; 
   padding: 0px;
   width: 120px;
   height: 120px;
@@ -779,7 +771,7 @@ img.profile_photo {
 }
 
 li.contact_info img {
-  margin-top: -12px;
+  margin-top: -13px;
 }
 
 img.contact_icon {
@@ -796,4 +788,11 @@ a.contact_link {
 
 .info_p {
   vertical-align: middle;
+}
+
+footer {
+  margin-top: -12.5px;
+  height: 40px;
+  text-align: center;
+  font-style: italic;
 }
