@@ -196,6 +196,11 @@ div.line {
   position: relative;
   display: inline-block;
   left: 50%;
+  margin-bottom: 0px;
+}
+
+#content {
+  margin-top: 2%;
 }
 
 .start {
@@ -214,7 +219,7 @@ div.button1 {
   position: relative;
   color: #ffffff;
   text-shadow: 0px -2px #003e58;
-  padding: 10px 25px;
+  padding: 5px 20px;
   font-size: 28px;
   top: 0px;
   width: 100%;
@@ -347,7 +352,6 @@ input{
   width: 100%;
   height: 20px;
   margin-top: -21px;
-  margin-left: 100px;
   float: left;
   text-align: center;
   z-index: 100;
@@ -369,7 +373,7 @@ input{
   display: none;
 }
 .select_but:hover{
-  background: rgba(255,255,255,.6);
+  background: #00628B;
   cursor: pointer;
 }
 
@@ -708,6 +712,7 @@ li .info{
 .contact_info {
   font-size: 2em;
   margin-left: 26%;
+  vertical-align: middle;
 }
 
 img {
@@ -722,7 +727,7 @@ img {
 }
 
 #aboutContent {
-  height: 10px;
+  /*height: 10px;*/
   -moz-box-shadow: 0 0 5px 5px #888 inset;
   -webkit-box-shadow: 0 0 5px 5px#888 inset;
   box-shadow: 0 0 5px 5px #888 inset;
@@ -730,47 +735,35 @@ img {
 
 h3 {
   text-align: center;
+  margin-top: 0px;
 }
 div.skills {
   border: 2px solid black;
   width: 100%;
-  height: 45%;
+  height: 85%;
   margin: auto;
   border-radius: 10px;
+  /*padding-top: 0px;*/
 }
-li.skill {
-  list-style: square;
-  margin: 0;
-}
-
-img.icon {
-  padding: 5px;
-  width: 100px;
-  height: 100px;
+img.icon, img.icon2 {
+  padding: 0px;
+  width: 120px;
+  height: 120px;
   margin: 25px;
-  margin-top: 60px;
   -moz-box-shadow: 1px 1px 3px 2px #8c8c8c;
   -webkit-box-shadow: 1px 1px 5px 3px #8c8c8c;
   box-shadow: 1px 1px 3px 3px #8c8c8c;
   border-radius: 10px;
 }
-
-.icon2 {
-  padding: 5px;
-  padding-left: 20px;
-  padding-right: 20px;
-  width: 70px;
-  height: 100px;
-  margin: 25px;
-  margin-top: 60px;
-  -moz-box-shadow: 1px 1px 3px 2px #8c8c8c;
-  -webkit-box-shadow: 1px 1px 5px 3px #8c8c8c;
-  box-shadow: 1px 1px 3px 3px #8c8c8c;
-  border-radius: 10px;
+img.icon2 {
+  margin-right: 5.5%;
 }
 
-
+div.profile {
+  margin-top: 2%;
+}
 img.profile_photo {
+  margin-left: 1.5%;
   border-radius: 50%;
   -moz-box-shadow: 1px 1px 3px 2px #8c8c8c;
   -webkit-box-shadow: 1px 1px 5px 3px #8c8c8c;
@@ -780,4 +773,20 @@ img.profile_photo {
 .wrapper {
   width: 80%;
   margin-left: 0px;
+}
+
+img.contact_icon {
+  width: 50px;
+  height: 50px;
+  float: left;
+  border-radius: 25%;
+}
+
+a.contact_link {
+  float: left;
+  margin-left: 15%;
+}
+
+.info_p {
+  vertical-align: middle;
 }
