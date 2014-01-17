@@ -5,6 +5,7 @@
 
 var express = require('express');
 var engine = require('ejs-locals');
+var sass = require('node-sass');
 
 var routes = require('./routes');
 
@@ -25,6 +26,15 @@ app.use(express.logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded());
 app.use(express.methodOverride());
+
+app.use(
+  sass.middleware({
+    src: __dirname + '/public/sass', //where the sass files are 
+    dest: __dirname + '/public/', //where css should go
+    debug: true,
+    outputStyle: 'compressed'
+  })
+);
 
 app.use(express.static(path.join(__dirname, 'public')));
 
