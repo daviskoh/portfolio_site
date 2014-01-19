@@ -1,5 +1,5 @@
 window.onload = function() {
-  console.log("aldkfja;lskdjf;l");
+  console.log("LOADED main.js");
 }
 
-var Main = 123;
+var main = 123;
