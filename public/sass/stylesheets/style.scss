@@ -2,11 +2,18 @@
 
 @import url(http://fonts.googleapis.com/css?family=Open+Sans);
 @import url(http://fonts.googleapis.com/css?family=Oswald);
-@import url(http://fonts.googleapis.com/css?family=Lobster);
+@import url(http://fonts.googleapis.com/css?family=Bubblegum+Sans);
 
 /* #variables ***************************************************/
 
 $primary-color: lighten(#00628B, 10%);
+
+/* #mixins ******************************************************/
+@mixin box-shadow {
+  -moz-box-shadow: 1px 1px 3px 2px #8c8c8c;
+  -webkit-box-shadow: 1px 1px 5px 3px #8c8c8c;
+  box-shadow: 1px 1px 3px 3px #8c8c8c;
+}
 
  /*#CSS *********************************************************/
 
@@ -20,10 +27,10 @@ body {
 }
 
 h1 {
-  font-family: 'Lobster';
+  font-family: 'Bubblegum Sans';
   font-weight: 100;
   font-size: 3em;
-  color: goldenrod;
+  color: black;
   text-align: center;
   margin-bottom: 0.5%;
   margin-top: 0%;
@@ -49,6 +56,7 @@ div#aboutContent {
   box-shadow: 0 0 5px 5px #888 inset;
   padding: 20px;
   min-height: 500px;
+  width: 96.5%;
 }
 
 div.container {
@@ -206,7 +214,7 @@ div.button1 {
   margin-left: 200px;
   position: absolute;
   width: 50.01%;
-  height: 75%;
+  height: 80%;
   border: 2px solid #000;
   -webkit-user-select:none;
   -moz-user-select:none;
@@ -513,31 +521,6 @@ div.button1 {
     transition: all 300ms ease-in-out;
 }
 
-@media screen and (max-width: 880px) {
-  header{
-    font-size: 2em;
-  }
-}
-@media screen and (max-width: 600px) {
-  header{
-    font-size: .9em;
-    font-weight: bolder;
-  }
-}
-@media screen and (max-width: 430px) {
-  .select_but{
-    width: 10px;
-    height: 10px;
-    border-radius: 5px;
-  }
-  .select_but > div{
-    width: 6px;
-    height: 6px;
-    border-radius: 3px;
-    margin: 2px;
-  }
-}
-
 /*******************************************************************/
 
 h2 {
@@ -634,49 +617,60 @@ li {
   }
 }
 
-.bio {
+p.bio {
   float: right;
   width: 75%;
+  font-size: auto;
   margin-top: 0;
   margin-bottom: 0;
 }
 
 h3 {
+  clear: both;
   text-align: center;
   margin-top: 0px;
 }
 div.skills {
+  clear: both;
   border: 2px solid black;
   width: 100%;
-  height: 85%;
+  height: 10%;
+  min-height: 300px;
   margin: auto;
   border-radius: 10px;
-  /*padding-top: 0px;*/
+  display: inline-block;
+  position: relative;
 }
-img.icon, img.icon2 {
+div.image_container {
+  float: left;
   background-color: #E6E6DC; 
   padding: 0px;
-  width: 120px;
-  height: 120px;
-  margin: 25px;
-  -moz-box-shadow: 1px 1px 3px 2px #8c8c8c;
-  -webkit-box-shadow: 1px 1px 5px 3px #8c8c8c;
-  box-shadow: 1px 1px 3px 3px #8c8c8c;
+  width: 12.5%;
+  /*height: 120px;*/
+  height: 7.5em;
+  
+  margin-right: 3.7%;
+  margin-left: 3.7%;
+  margin-top: 2%;
+  @include box-shadow;
   border-radius: 10px;
-}
-img.icon2 {
-  margin-right: 5.5%;
+
+  img.icon {
+    /*position: relative;*/
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+  }
 }
 
 div.profile {
   margin-top: 2%;
 }
 img.profile_photo {
+  width: 20%;
   margin-left: 1.5%;
   border-radius: 50%;
-  -moz-box-shadow: 1px 1px 3px 2px #8c8c8c;
-  -webkit-box-shadow: 1px 1px 5px 3px #8c8c8c;
-  box-shadow: 1px 1px 3px 3px #8c8c8c;
+  @include box-shadow;
 }
 
 .wrapper {
@@ -697,8 +691,61 @@ a.contact_link {
 }
 
 footer {
+  clear: both;
   margin-top: -12.5px;
   height: 40px;
   text-align: center;
   font-style: italic;
+}
+
+/*Media Queries**********************************************/
+/*portfolio swipe responsive*/
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+  .wrapper {
+    height: 30%;
+  }
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) {
+  p.bio {
+    font-size: 2em;
+  }
+  div.skills {
+    width: 100%;
+    min-height: 1230px;
+  }
+  div.image_container {
+    width: 200px;
+    height: 200px;
+    margin-top: 5%;
+    margin-right: 11%;
+    margin-left: 11%;
+  }
+  h2 {
+    width: 101%;
+    font-size: 2.5em;
+  }
+  h3 {
+    margin-top: 350px;
+    font-size: 1.8em;
+  }
+  .wrapper {
+    height: 40%;
+    /*width: 100%;*/
+  }
+  .select_but{
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+  }
+  .select_but > div{
+    width: 6px;
+    height: 6px;
+    border-radius: 3px;
+    margin: 2px;
+  }
+  footer {
+    font-size: 2em;
+  }
 }
