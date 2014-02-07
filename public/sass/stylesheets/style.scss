@@ -62,7 +62,9 @@ div#aboutContent {
 div.container {
   position: relative;
   display: inline-block;
-  left: -50%;
+  float: left;
+  width: 100%;
+  text-align: center;
 }
 
 button {
@@ -161,8 +163,9 @@ div.line {
 .nav {
   position: relative;
   display: inline-block;
-  left: 50%;
+  /*left: 50%;*/
   margin-bottom: 0px;
+  width: 100%;
 }
 
 #content {
@@ -708,6 +711,9 @@ footer {
 }
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 568px) {
+  nav {
+
+  }
   p.bio {
     font-size: 2em;
   }
@@ -721,6 +727,9 @@ footer {
     margin-top: 5%;
     margin-right: 11%;
     margin-left: 11%;
+  }
+  div.button1 {
+    font-size: 50px;
   }
   h2 {
     width: 101%;
