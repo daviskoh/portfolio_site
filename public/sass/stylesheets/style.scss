@@ -707,8 +707,19 @@ footer {
 }
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 568px) {
-  nav {
-
+  div#aboutContent {
+    margin-left: -12.5%;
+    width: 970px;
+    clear: both;
+  }
+  div#contactContent {
+    margin-left: -12.5%;
+    width: 970px;
+    clear: both;
+  }
+  div.h2 {
+    width: 100%;
+    float: left;
   }
   p.bio {
     font-size: 2em;
@@ -725,21 +736,24 @@ footer {
     margin-left: 11%;
   }
   div.button1 {
-    font-size: 70px;
+    font-size: 90px;
   }
   h2 {
-    width: 101%;
-    font-size: 3em;
-    height: 50px;
-    padding-top: 10px;
+    width: 100%;
+    font-size: 5em;
+    height: 60px;
+    padding-top: 20px;
+    margin-left: -13%;
   }
   h3 {
     margin-top: 350px;
     font-size: 1.8em;
   }
   .wrapper {
-    height: 40%;
-    width: 80.8%;;
+    height: 45%;
+    /*width: 80.8%;;*/
+    width: 100%;
+    margin-left: -10%;
   }
   .select_but{
     width: 10px;
