@@ -9,9 +9,8 @@
     "node": "0.10.x"
   },
   "dependencies": {
-    "express": "3.4.7",
-    "ejs": "*",
-    "ejs-locals": "~1.0.2",
-    "node-sass": "~0.8.1"
+    "express": "3.3.5",
+    "node-sass": "~0.8.1",
+    "jade": "*"
   }
 }

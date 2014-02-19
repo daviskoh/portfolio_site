@@ -1,5 +1,3 @@
-window.onload = function() {
-  console.log("LOADED main.js");
-}
-
-var main = 123;
+console.log('ello');
+bod = 'ello';
+var dude = $('body');
