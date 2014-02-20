@@ -12,20 +12,74 @@ block content
       section.page1
         div.page_container
           h3 We Huungry
-          h4 Food recommendation system
-          p blah blah blah
+          a(href='http://we-hungry.herokuapp.com/', target='_blank')
+            img(src='/images/wehungry.png', class='app_pic')
+
+          p.app_desc.
+            <span class='field'>Source-Code:</span> <a href='https://github.com/daviskoh/we_hungry' target='_blank'>We Huungry @ Github</a>
+            <br>
+            <br>
+            <span class='field'>Stack:</span> Rails, PostgreSQL, jQuery, Sass
+            <br>
+            <br>
+            <span class='field'>Description:</span> We Huungry is a food recommendation system (think pandora radio for food).
+            Generate a recommendation and with each upvote / downvote of a dish, We Huungry will 
+            learn your preferences to make a better suggestion each time.
+      
       section.page2
         div.page_container
           h3 Radar
-          h4 Digital job board built for General Assembly
-          p blah blah blah
+          a(href='http://ga-radar.herokuapp.com/', target='_blank')
+            img(src='/images/garadar.png', class='app_pic')
+
+          p.app_desc.
+            <span class='field'>Source-Code:</span> <a href='https://github.com/russelltaff/radar' target='_blank'>GA Radar @ Github</a>
+            <br>
+            <br>
+            <span class='field'>Stack:</span> Rails, PostgreSQL, jQuery
+            <br>
+            <br>
+            <span class='field'>Description:</span> Radar is a digital job board built for General Assembly. Sign up as a studen to
+            find a job or register as a company to find your next employee. Adjust your profile, post a job, 
+            search posts with tags or just browse.
+      
       section.page3
         div.page_container
           h3 backaid
-          h4 Underscore.js & Backbone.js dependency injection and directory scaffolder
-          p blah blah blah
+          a(href='https://rubygems.org/gems/backaid', target='_blank')
+            img(src='/images/backaid.png', class='app_pic')
+
+          p.app_desc.
+            <span class='field'>Source-Code:</span> <a href='https://github.com/daviskoh/backaid' target='_blank'>backaid @ Github</a>
+            <br>
+            <br>
+            <span class='field'>Downloads: 1800+</span>
+            <br>
+            <br>
+            <span class='field'>Description:</span> backaid is a RubyGem. It is an Underscore.js & Backbone.js dependency injection and directory scaffolder
+            built using a Rails generator and a Rails engine. Simply require 'backaid' then bundle install. It's that easy.
+
           div.btns
-            a(href='https://github.com/peachananr/onepage-scroll', class='reload btn')
+          a(href='https://github.com/peachananr/onepage-scroll', class='reload btn')
+    
+      section.page4
+        div.page_container
+          h3 Swagu.ru <span class='progress'>(in progress)</span>
+          
+          a(href='http://swaguru.herokuapp.com/', target='_blank')
+            img(src='/images/swag.png', class='app_pic')
+
+          p.app_desc.
+            <span class='field'>Source-Code:</span> <a href='https://github.com/daviskoh/swaguru' target='_blank'>Swagu.ru @ Github</a>
+            <br>
+            <br>
+            <span class='field'>Stack:</span> Rails, Backbone.js, Foundation, Underscore.js, backaid
+            <br>
+            <br>
+            <span class='field'>Description:</span> Swagu.ru is the (soon to be) best place to discover style. Upload photos and view others' photos
+            to provide or get that style inspiration. Using modern JavaScript, the app needs to be loaded once and
+            never again. Everything from login to photo uploads is lightning fast.
+
 
 block scripts
   script(src='/javascripts/jquery.onepage-scroll.min.js', type='text/javascript')

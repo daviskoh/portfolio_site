@@ -1,3 +1,8 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import url(http://fonts.googleapis.com/css?family=Oswald);
+@import url(http://fonts.googleapis.com/css?family=Bubblegum+Sans);
+@import url(http://fonts.googleapis.com/css?family=Berkshire+Swash);
+
 .swipe_wrapper {
   height: 100% !important;
   height: 100%;
@@ -98,4 +103,39 @@ body, .onepage-wrapper, html {
 
 body.disabled-onepage-scroll, .disabled-onepage-scroll .onepage-wrapper, html {
   position: inherit;
+}
+
+h3 {
+  margin-top: 3%;
+  margin-bottom: 1%;
+  font-family: 'Bubblegum Sans';
+  font-size: 2em;
+}
+
+h3 span.progress {
+  font-size: .7em;
+  font-family: 'Open Sans';
+}
+
+.app_pic {
+  margin-left: 1%;
+  margin-top: 2%;
+  width: 60%;
+  -moz-box-shadow: 1px 1px 3px 2px #8c8c8c;
+  -webkit-box-shadow: 1px 1px 5px 3px #8c8c8c;
+  box-shadow: 1px 1px 3px 3px #8c8c8c;
+  height: auto;
+}
+
+.app_desc {
+  font-size: 1.2em;
+  font-family: 'Open Sans';
+  float: right;
+  width: 35%;
+  margin-top: 2%;
+  margin-right: 2%;
+}
+
+span.field {
+  font-family: 'Oswald';
 }
