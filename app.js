@@ -20,16 +20,16 @@ app.use(express.json());
 app.use(express.urlencoded());
 app.use(express.methodOverride());
 
-app.use(express.static(path.join(__dirname, 'public')));
-
 app.use(
   sass.middleware({
     src: __dirname + '/public/sass', //where the sass files are 
-    dest: __dirname + '/public/', //where css should go
+    dest: __dirname + '/public', //where css should go
     debug: true,
     outputStyle: 'compressed'
   })
 );
+
+app.use(express.static(path.join(__dirname, '/public')));
 
 app.use(app.router);
 
